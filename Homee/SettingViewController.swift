@@ -43,7 +43,7 @@ class SettingViewController: UIViewController,receiveSocketMsgDelegate {
         
         println("touchesBegan")
         
-        //let touchesSet=touches as NSSet
+        //let touchesSet=touches as NSSet                  altnate ways
         //let touch=touchesSet.anyObject() as? UITouch
         let touch = touches.first as? UITouch
         
