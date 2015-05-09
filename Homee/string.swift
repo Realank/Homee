@@ -1,5 +1,6 @@
 /*
-* @String扩展
+* @String扩展 realank
+
 * @Date:2014/06/17
 */
 import Foundation
