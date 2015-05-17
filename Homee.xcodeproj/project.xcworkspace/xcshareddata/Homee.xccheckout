@@ -6,31 +6,35 @@
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D8689AD3-8AA8-43CA-BF60-CDED73903F93</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Homee</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>45F06DA75D0F02B3093B29F565440E4C3B5D4FE4</key>
-		<string>https://github.com/AlwaysRightInstitute/SwiftSockets.git</string>
+		<key>7B68412AA2B1FAA513E9D75CF3B7BAA2ED878894</key>
+		<string>https://github.com/Realank/Homee.git</string>
 	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Homee.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>45F06DA75D0F02B3093B29F565440E4C3B5D4FE4</key>
-		<string>SwiftSockets/</string>
+		<key>7B68412AA2B1FAA513E9D75CF3B7BAA2ED878894</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/AlwaysRightInstitute/SwiftSockets.git</string>
+	<string>https://github.com/Realank/Homee.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>45F06DA75D0F02B3093B29F565440E4C3B5D4FE4</string>
+	<string>7B68412AA2B1FAA513E9D75CF3B7BAA2ED878894</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>45F06DA75D0F02B3093B29F565440E4C3B5D4FE4</string>
+			<string>7B68412AA2B1FAA513E9D75CF3B7BAA2ED878894</string>
 			<key>IDESourceControlWCCName</key>
-			<string>SwiftSockets</string>
+			<string>Homee</string>
 		</dict>
 	</array>
 </dict>

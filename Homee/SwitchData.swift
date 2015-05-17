@@ -50,7 +50,7 @@ class SwitchData : receiveSocketMsgDelegate {
     
     func reloadData(){
         switches.removeAll(keepCapacity: true)
-        for _ in 1...10{
+        for _ in 1...5{
             sockcom.communicate(dataToSend: "LITE:CHEK:LVRM:0000")
         }
 
