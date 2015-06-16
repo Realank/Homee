@@ -50,7 +50,7 @@ class SwitchData : receiveSocketMsgDelegate {
     
     func reloadData(){
         switches.removeAll(keepCapacity: true)
-        for _ in 1...5{
+        for _ in 1...4{
             sockcom.communicate(dataToSend: "LITE:CHEK:LVRM:0000")
         }
 
@@ -72,7 +72,7 @@ class SwitchData : receiveSocketMsgDelegate {
         dispatch_async(dispatch_get_main_queue()){
             var strArray = data.split(":")
             println("Switchdata received Socket Answer is: \(strArray) bytes: \(count)")
-            var swch = SwitchItem(named: "客厅灯 \(random()%10)", withWait: false, type:(random()%2+2), andValue: 1)
+            var swch = SwitchItem(named: "灯光 \(random()%10)", withWait: false, type:(random()%2+2), andValue: 1)
             self.switches.append(swch)
             self.switches.sort({ (before , after) -> Bool in
                 // add some sort

@@ -215,6 +215,7 @@
 		54E49D441AD0CBC90013A50D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Realank-Mac";
 				TargetAttributes = {

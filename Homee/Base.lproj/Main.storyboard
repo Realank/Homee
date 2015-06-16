@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="00B-df-acL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="00B-df-acL">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -216,9 +216,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qn3-mY-Imu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4256" y="447"/>
+            <point key="canvasLocation" x="4240" y="213"/>
         </scene>
-        <!--View Controller-->
+        <!--红外控制-->
         <scene sceneID="LxO-J7-XHE">
             <objects>
                 <viewController id="D0e-hd-Z7q" sceneMemberID="viewController">
@@ -229,9 +229,28 @@
                     <view key="view" contentMode="scaleToFill" id="iNs-5j-Bn4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂未添加内容" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5C5-Mo-GnN">
+                                <rect key="frame" x="16" y="289" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5C5-Mo-GnN" firstAttribute="leading" secondItem="iNs-5j-Bn4" secondAttribute="leadingMargin" id="KbV-fQ-esD"/>
+                            <constraint firstItem="5C5-Mo-GnN" firstAttribute="trailing" secondItem="iNs-5j-Bn4" secondAttribute="trailingMargin" id="O1M-dd-5A4"/>
+                            <constraint firstItem="5C5-Mo-GnN" firstAttribute="top" secondItem="bV5-UF-ybF" secondAttribute="bottom" constant="225" id="mDH-x9-pLo"/>
+                            <constraint firstAttribute="centerY" secondItem="5C5-Mo-GnN" secondAttribute="centerY" id="oaG-Jx-FSe"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mDH-x9-pLo"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="ECg-o7-RRV"/>
+                    <navigationItem key="navigationItem" title="红外控制" id="ECg-o7-RRV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cY2-eQ-Ygv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -420,7 +439,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lpT-R5-5Eh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3444" y="449"/>
+            <point key="canvasLocation" x="3482" y="411"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Tfj-5V-8XW">
@@ -440,7 +459,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZU-H0-rt7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2632" y="449"/>
+            <point key="canvasLocation" x="2690" y="403"/>
         </scene>
         <!--红外控制-->
         <scene sceneID="5rH-fo-spR">
