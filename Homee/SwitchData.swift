@@ -13,6 +13,7 @@ protocol SwitchDataHasUpdateDelegate{
 }
 
 class SwitchItem{
+    //还需要添加一个用于显示的名字，以及一个表示设备没有开启的disable状态
     var name : String
     var waiting : Bool
     var type : Int
@@ -50,8 +51,9 @@ class SwitchData : receiveSocketMsgDelegate {
     
     func reloadData(){
         switches.removeAll(keepCapacity: true)
-        for _ in 1...4{
-            sockcom.communicate(dataToSend: "LITE:CHEK:LVRM:0000")
+        sockcom.communicate(dataToSend: "LITE:CHEK:LVRM:0000")
+        for i in 1...3{
+            sockcom.communicate(dataToSend: "LITE:CHEK:BDRM:000\(i)")
         }
 
     }
@@ -72,11 +74,27 @@ class SwitchData : receiveSocketMsgDelegate {
         dispatch_async(dispatch_get_main_queue()){
             var strArray = data.split(":")
             println("Switchdata received Socket Answer is: \(strArray) bytes: \(count)")
-            var swch = SwitchItem(named: "灯光 \(random()%10)", withWait: false, type:(random()%2+2), andValue: 1)
+            
+            var swch : SwitchItem
+            
+            if strArray[0] == "LITE" && strArray[1] == "NHST" && strArray[2] == "LVRM"{
+                
+                swch = SwitchItem(named: "客厅灯 \(strArray[3].toInt() ?? 0)", withWait: false, type:(3), andValue: 1)
+
+            } else if strArray[0] == "LITE" && strArray[1] == "NHST" && strArray[2] == "BDRM"{
+                
+                swch = SwitchItem(named: "卧室灯 \(strArray[3].toInt() ?? 0)", withWait: false, type:(2), andValue: 1)
+
+            } else {
+                
+                swch = SwitchItem(named: "灯光 \(strArray[3].toInt() ?? 0)", withWait: false, type:(2), andValue: 1)
+
+            }
             self.switches.append(swch)
             self.switches.sort({ (before , after) -> Bool in
                 // add some sort
-                return true
+                
+                return before.name < after.name ? true : false
             })
             self.switchDataHasUpdateDelegater?.switchDataHasUpdate()
         }
