@@ -13,7 +13,7 @@ class SwitchTableViewController: UITableViewController, SwitchChangedDelegate, S
     @IBOutlet weak var navigationBar: UINavigationItem!
     var navigationBarDefaultName : String?
     
-    var switchData = SwitchData()
+    let switchData = SwitchData()
 
     override func viewDidLoad() {
         super.viewDidLoad()

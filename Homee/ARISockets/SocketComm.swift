@@ -22,7 +22,7 @@ class SocketComm: NSObject {
     var receiverDelegater : receiveSocketMsgDelegate?
     let queue = dispatch_queue_create("SocketComm",DISPATCH_QUEUE_CONCURRENT)
     
-    func communicate(dataToSend data: String? = nil){
+    func communicate(dataToSend data: String){
         dispatch_async(queue){
             self.communicateAsync(dataToSend: data)
         }

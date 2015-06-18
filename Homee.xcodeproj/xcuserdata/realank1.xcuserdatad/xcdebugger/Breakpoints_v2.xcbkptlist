@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Homee/SwitchTableViewController.swift"
-            timestampString = "449989185.398839"
+            timestampString = "456280426.5421"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "74"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Homee/SwitchTableViewController.swift"
-            timestampString = "449989185.398839"
+            timestampString = "456280426.5421"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
@@ -80,6 +80,22 @@
             startingLineNumber = "268"
             endingLineNumber = "268"
             landmarkName = "asyncWrite(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Homee/WeatherViewController.swift"
+            timestampString = "456328465.670832"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "didReceiveMemoryWarning()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

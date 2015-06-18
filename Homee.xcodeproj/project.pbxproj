@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		542BACF11B32E4290037B384 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542BACF01B32E4290037B384 /* Images.xcassets */; };
+		542BACF31B32F1CD0037B384 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BACF21B32F1CD0037B384 /* WeatherViewController.swift */; };
+		542BACF61B32F3400037B384 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BACF51B32F3400037B384 /* WeatherData.swift */; };
 		5496C6D11AD118CB00BAE7EB /* SwitchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496C6D01AD118CB00BAE7EB /* SwitchData.swift */; };
 		54E26BC91AD1879D0006E0E9 /* ActiveSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E26BC01AD1879D0006E0E9 /* ActiveSocket.swift */; };
 		54E26BCA1AD1879D0006E0E9 /* DNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E26BC21AD1879D0006E0E9 /* DNS.swift */; };
@@ -18,7 +21,6 @@
 		54E49D521AD0CBCA0013A50D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E49D511AD0CBCA0013A50D /* AppDelegate.swift */; };
 		54E49D551AD0CBCA0013A50D /* Homee.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 54E49D531AD0CBCA0013A50D /* Homee.xcdatamodeld */; };
 		54E49D5A1AD0CBCA0013A50D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E49D581AD0CBCA0013A50D /* Main.storyboard */; };
-		54E49D5C1AD0CBCA0013A50D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54E49D5B1AD0CBCA0013A50D /* Images.xcassets */; };
 		54E49D5F1AD0CBCA0013A50D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54E49D5D1AD0CBCA0013A50D /* LaunchScreen.xib */; };
 		54E49D6B1AD0CBCA0013A50D /* HomeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E49D6A1AD0CBCA0013A50D /* HomeeTests.swift */; };
 		54E49D771AD0D28C0013A50D /* SwitchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E49D761AD0D28C0013A50D /* SwitchTableViewController.swift */; };
@@ -39,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		542BACF01B32E4290037B384 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		542BACF21B32F1CD0037B384 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		542BACF51B32F3400037B384 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		5496C6D01AD118CB00BAE7EB /* SwitchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchData.swift; sourceTree = "<group>"; };
 		54E26BC01AD1879D0006E0E9 /* ActiveSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveSocket.swift; sourceTree = "<group>"; };
 		54E26BC11AD1879D0006E0E9 /* ARISockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARISockets.h; sourceTree = "<group>"; };
@@ -53,7 +58,6 @@
 		54E49D511AD0CBCA0013A50D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54E49D541AD0CBCA0013A50D /* Homee.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homee.xcdatamodel; sourceTree = "<group>"; };
 		54E49D591AD0CBCA0013A50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		54E49D5B1AD0CBCA0013A50D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		54E49D5E1AD0CBCA0013A50D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		54E49D641AD0CBCA0013A50D /* HomeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E49D691AD0CBCA0013A50D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,12 +88,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		542BACF41B32F2900037B384 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				542BACF51B32F3400037B384 /* WeatherData.swift */,
+				542BACF21B32F1CD0037B384 /* WeatherViewController.swift */,
+			);
+			name = Weather;
+			sourceTree = "<group>";
+		};
 		5496C6D21AD118D600BAE7EB /* Switch */ = {
 			isa = PBXGroup;
 			children = (
 				5496C6D01AD118CB00BAE7EB /* SwitchData.swift */,
 				54E49D761AD0D28C0013A50D /* SwitchTableViewController.swift */,
 				54E49D781AD0DCFC0013A50D /* SwitchTableViewCell.swift */,
+				542BACF41B32F2900037B384 /* Weather */,
 			);
 			name = Switch;
 			sourceTree = "<group>";
@@ -145,8 +159,8 @@
 		54E49D4F1AD0CBCA0013A50D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				54E49D5B1AD0CBCA0013A50D /* Images.xcassets */,
 				54F693351AD198A0003C6585 /* Homee-Bridging-Header.h */,
+				542BACF01B32E4290037B384 /* Images.xcassets */,
 				54E49D5D1AD0CBCA0013A50D /* LaunchScreen.xib */,
 				54E49D531AD0CBCA0013A50D /* Homee.xcdatamodeld */,
 				54E49D501AD0CBCA0013A50D /* Info.plist */,
@@ -253,9 +267,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				542BACF11B32E4290037B384 /* Images.xcassets in Resources */,
 				54E49D5A1AD0CBCA0013A50D /* Main.storyboard in Resources */,
 				54E49D5F1AD0CBCA0013A50D /* LaunchScreen.xib in Resources */,
-				54E49D5C1AD0CBCA0013A50D /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +292,7 @@
 				54F693341AD18CAD003C6585 /* SocketComm.swift in Sources */,
 				54E26BCC1AD1879D0006E0E9 /* PassiveSocket.swift in Sources */,
 				54E26BD01AD1879D0006E0E9 /* UnixUtils.swift in Sources */,
+				542BACF31B32F1CD0037B384 /* WeatherViewController.swift in Sources */,
 				54E7870E1AD3F35E00FB7696 /* SettingViewController.swift in Sources */,
 				54E26BCE1AD1879D0006E0E9 /* SocketAddress.swift in Sources */,
 				54E26BCF1AD1879D0006E0E9 /* UnixBridge.c in Sources */,
@@ -285,6 +300,7 @@
 				54E49D791AD0DCFC0013A50D /* SwitchTableViewCell.swift in Sources */,
 				54E26BCD1AD1879D0006E0E9 /* Socket.swift in Sources */,
 				54E49D551AD0CBCA0013A50D /* Homee.xcdatamodeld in Sources */,
+				542BACF61B32F3400037B384 /* WeatherData.swift in Sources */,
 				5496C6D11AD118CB00BAE7EB /* SwitchData.swift in Sources */,
 				54F693371AD2376B003C6585 /* string.swift in Sources */,
 				54E49D521AD0CBCA0013A50D /* AppDelegate.swift in Sources */,

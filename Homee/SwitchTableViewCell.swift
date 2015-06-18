@@ -23,17 +23,20 @@ class SwitchTableViewCell: UITableViewCell {
         switchChangedDelegater?.switchChangedByUser(switchName.text!, withValue: switchSegment.selectedSegmentIndex)
     }
     
-    func setStatus(name:String, wait:Bool, statNum:Int){
+    func setStatus(name:String, wait:SwitchStatus, statNum:Int){
         switchName.text = name;
-        if wait == true {
-            switchWaitIndicator.startAnimating()
-            switchSegment.enabled = false
-        }else{
-            switchWaitIndicator.stopAnimating()
-            switchSegment.enabled = true
-            switchSegment.selectedSegmentIndex = statNum
+        switch wait {
+            case .disabled:
+                switchWaitIndicator.stopAnimating()
+                switchSegment.enabled = false
+            case .fixed:
+                switchWaitIndicator.stopAnimating()
+                switchSegment.enabled = true
+                switchSegment.selectedSegmentIndex = statNum
+            case .pending:
+                switchWaitIndicator.startAnimating()
+                switchSegment.enabled = false
         }
-
     }
     
 
