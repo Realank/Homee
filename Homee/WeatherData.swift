@@ -63,6 +63,10 @@ class WeatherData : receiveSocketMsgDelegate {
             var strArray = data.split(":")
             println("WeatherData received Socket Answer is: \(strArray) bytes: \(count)")
             
+            if strArray.count < 5{
+                println("Error, weather feedback data is too short!")
+                return
+            }
             
             if strArray[0] == "WTHR" && strArray[1] == "BACK" {
                 

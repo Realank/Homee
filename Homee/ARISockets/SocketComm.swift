@@ -14,7 +14,7 @@ protocol receiveSocketMsgDelegate{
 
 struct IPAndPort {
     static var hostIP = "182.92.183.168"
-    static var port = 6001
+    static var port = 3001
 }
 
 class SocketComm: NSObject {
@@ -66,7 +66,10 @@ class SocketComm: NSObject {
             println("connected \(socket)")
             socket?.isNonBlocking = true
             
-            socket?.write( dataToSend ?? "WTHR:CHEK:WEEK:0000" )
+            if let sk = socket{
+                sk.write( dataToSend ?? "WTHR:CHEK:WEEK:0000" )
+
+            }
         }
         
         if (ok == nil) {

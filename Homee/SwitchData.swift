@@ -18,6 +18,7 @@ enum SwitchStatus{
     case disabled
 }
 
+
 let switchNameList = ["客厅灯":"LVRM","卧室灯 1":"BDR1","卧室灯 2":"BDR2","卧室灯 3":"BDR3"]
 
 class SwitchItem{
