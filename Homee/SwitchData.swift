@@ -49,32 +49,32 @@ class SwitchData : receiveSocketMsgDelegate {
     
     var switchDataHasUpdateDelegater : SwitchDataHasUpdateDelegate?
     let sectionsForTable = 1
-    var switches = [SwitchItem]()
-    let sockcom = SocketComm()
+    static var switches = [SwitchItem]()
+    static let sockcom = SocketComm()
     
     init(){
-        sockcom.receiverDelegater = self
+        SwitchData.sockcom.receiverDelegater = self
     }
     
     
     func numberOfRowsInSection() -> Int{
 
-        println("request numberOfRowsInSection:\(switches.count)")
-        return switches.count
+        println("request numberOfRowsInSection:\(SwitchData.switches.count)")
+        return SwitchData.switches.count
         
     }
     
     func reloadData(){
-        switches.removeAll(keepCapacity: false)
+        SwitchData.switches.removeAll(keepCapacity: false)
         for (_,switchName) in switchNameList{
             let data = "LITE:CHEK:".stringByAppendingFormat("%@:0000", switchName)
-            sockcom.communicate(dataToSend: data)
+            SwitchData.sockcom.communicate(dataToSend: data)
         }
 
     }
     
     func setSpecificData(switchName: String, withValue value: Int){
-        for swch in switches{
+        for swch in SwitchData.switches{
             if(swch.name == switchName)
             {
                 //sockcom.communicate()
@@ -85,7 +85,7 @@ class SwitchData : receiveSocketMsgDelegate {
                 //sockcom.communicate(dataToSend: data)
                 if let name = switchNameList[switchName]{
                     let data = "LITE:SETE:".stringByAppendingFormat("%@:%04d", name, value)
-                    sockcom.communicate(dataToSend: data)
+                    SwitchData.sockcom.communicate(dataToSend: data)
                 }
                 
             }
@@ -129,15 +129,15 @@ class SwitchData : receiveSocketMsgDelegate {
             
             if swch != nil {
                 var newItem = true
-                for member in self.switches{
+                for member in SwitchData.switches{
                     if member.name == swch!.name{
                         member.changeInfo(swch!.waiting, andValue: swch!.value)
                         newItem = false
                     }
                 }
                 if newItem == true {
-                    self.switches.append(swch!)
-                    self.switches.sort({ (before , after) -> Bool in
+                    SwitchData.switches.append(swch!)
+                    SwitchData.switches.sort({ (before , after) -> Bool in
                         // add some sort
                         
                         return before.name < after.name ? true : false

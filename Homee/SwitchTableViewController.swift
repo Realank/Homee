@@ -65,7 +65,7 @@ class SwitchTableViewController: UITableViewController, SwitchChangedDelegate, S
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var cell : SwitchTableViewCell
-        if switchData.switches[indexPath.row].type == 3 {
+        if SwitchData.switches[indexPath.row].type == 3 {
             cell = tableView.dequeueReusableCellWithIdentifier("SwitchCell3Segment", forIndexPath: indexPath) as! SwitchTableViewCell
         }else{
             cell = tableView.dequeueReusableCellWithIdentifier("SwitchCell", forIndexPath: indexPath) as! SwitchTableViewCell
@@ -73,9 +73,9 @@ class SwitchTableViewController: UITableViewController, SwitchChangedDelegate, S
         
         // Configure the cell...
         cell.switchChangedDelegater = self
-        cell.setStatus("\(switchData.switches[indexPath.row].name)",
-            wait: switchData.switches[indexPath.row].waiting,
-            statNum: switchData.switches[indexPath.row].value)
+        cell.setStatus("\(SwitchData.switches[indexPath.row].name)",
+            wait: SwitchData.switches[indexPath.row].waiting,
+            statNum: SwitchData.switches[indexPath.row].value)
 
         return cell
     }
