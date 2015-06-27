@@ -14,10 +14,10 @@ class SwitchTableViewController: UITableViewController, SwitchChangedDelegate, S
     var navigationBarDefaultName : String?
     
     let switchData = SwitchData()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         tableView.estimatedRowHeight = tableView.rowHeight
         tableView.rowHeight = UITableViewAutomaticDimension
         
@@ -89,6 +89,10 @@ class SwitchTableViewController: UITableViewController, SwitchChangedDelegate, S
     func switchDataHasUpdate(){
         navigationBar.title = navigationBarDefaultName ?? "Homee"
         refreshTable()
+//        if let userDefault:NSUserDefaults = NSUserDefaults(suiteName: "group.AWdataShare") {
+//            //let value = userDefault.integerForKey("shareInt")
+//            userDefault.setInteger(SwitchData.switches.count+num, forKey: "lightNum")
+//        }
     }
     
 

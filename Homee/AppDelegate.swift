@@ -33,6 +33,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillEnterForeground(application: UIApplication) {
         // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     }
+    
+    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+        for key in userInfo!.keys{
+            let command = key as! NSString
+            let value = userInfo![key] as! NSString
+            if command == "lightNum"{
+                reply(["lightNum":"\(SwitchData.switches.count)"])
+            }else if command == "refresh"{
+                reply(["lightNum":"\(SwitchData.switches.count)"])
+            }
+        }
+        
+        
+    }
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.

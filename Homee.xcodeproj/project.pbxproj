@@ -10,6 +10,13 @@
 		542BACF11B32E4290037B384 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 542BACF01B32E4290037B384 /* Images.xcassets */; };
 		542BACF31B32F1CD0037B384 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BACF21B32F1CD0037B384 /* WeatherViewController.swift */; };
 		542BACF61B32F3400037B384 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542BACF51B32F3400037B384 /* WeatherData.swift */; };
+		54965E0F1B3ED63E0041A18F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54965E0E1B3ED63E0041A18F /* InterfaceController.swift */; };
+		54965E111B3ED63E0041A18F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54965E101B3ED63E0041A18F /* NotificationController.swift */; };
+		54965E131B3ED63E0041A18F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54965E121B3ED63E0041A18F /* Images.xcassets */; };
+		54965E171B3ED63E0041A18F /* Homee WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 54965E161B3ED63E0041A18F /* Homee WatchKit App.app */; };
+		54965E1F1B3ED63E0041A18F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54965E1D1B3ED63E0041A18F /* Interface.storyboard */; };
+		54965E211B3ED63E0041A18F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54965E201B3ED63E0041A18F /* Images.xcassets */; };
+		54965E241B3ED63E0041A18F /* Homee WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 54965E091B3ED63E0041A18F /* Homee WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5496C6D11AD118CB00BAE7EB /* SwitchData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5496C6D01AD118CB00BAE7EB /* SwitchData.swift */; };
 		54E26BC91AD1879D0006E0E9 /* ActiveSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E26BC01AD1879D0006E0E9 /* ActiveSocket.swift */; };
 		54E26BCA1AD1879D0006E0E9 /* DNS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E26BC21AD1879D0006E0E9 /* DNS.swift */; };
@@ -31,6 +38,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		54965E181B3ED63E0041A18F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54E49D441AD0CBC90013A50D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54965E151B3ED63E0041A18F;
+			remoteInfo = "Homee WatchKit App";
+		};
+		54965E221B3ED63E0041A18F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54E49D441AD0CBC90013A50D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54965E081B3ED63E0041A18F;
+			remoteInfo = "Homee WatchKit Extension";
+		};
 		54E49D651AD0CBCA0013A50D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 54E49D441AD0CBC90013A50D /* Project object */;
@@ -40,10 +61,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		54965E2B1B3ED63E0041A18F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				54965E241B3ED63E0041A18F /* Homee WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		542BACF01B32E4290037B384 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		542BACF21B32F1CD0037B384 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		542BACF51B32F3400037B384 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		54965E091B3ED63E0041A18F /* Homee WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Homee WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54965E0C1B3ED63E0041A18F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54965E0D1B3ED63E0041A18F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		54965E0E1B3ED63E0041A18F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		54965E101B3ED63E0041A18F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		54965E121B3ED63E0041A18F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		54965E161B3ED63E0041A18F /* Homee WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homee WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54965E1C1B3ED63E0041A18F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54965E1E1B3ED63E0041A18F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		54965E201B3ED63E0041A18F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		54965E2D1B3EE34D0041A18F /* Homee.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Homee.entitlements; sourceTree = "<group>"; };
+		54965E2E1B3EE3FA0041A18F /* Homee WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "Homee WatchKit Extension.entitlements"; path = "../Homee WatchKit Extension/Homee WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		5496C6D01AD118CB00BAE7EB /* SwitchData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchData.swift; sourceTree = "<group>"; };
 		54E26BC01AD1879D0006E0E9 /* ActiveSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveSocket.swift; sourceTree = "<group>"; };
 		54E26BC11AD1879D0006E0E9 /* ARISockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARISockets.h; sourceTree = "<group>"; };
@@ -71,6 +118,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		54965E061B3ED63E0041A18F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54E49D491AD0CBCA0013A50D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,6 +149,45 @@
 				542BACF21B32F1CD0037B384 /* WeatherViewController.swift */,
 			);
 			name = Weather;
+			sourceTree = "<group>";
+		};
+		54965E0A1B3ED63E0041A18F /* Homee WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				54965E0E1B3ED63E0041A18F /* InterfaceController.swift */,
+				54965E101B3ED63E0041A18F /* NotificationController.swift */,
+				54965E121B3ED63E0041A18F /* Images.xcassets */,
+				54965E0B1B3ED63E0041A18F /* Supporting Files */,
+			);
+			path = "Homee WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		54965E0B1B3ED63E0041A18F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54965E0C1B3ED63E0041A18F /* Info.plist */,
+				54965E0D1B3ED63E0041A18F /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54965E1A1B3ED63E0041A18F /* Homee WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				54965E1D1B3ED63E0041A18F /* Interface.storyboard */,
+				54965E201B3ED63E0041A18F /* Images.xcassets */,
+				54965E1B1B3ED63E0041A18F /* Supporting Files */,
+			);
+			path = "Homee WatchKit App";
+			sourceTree = "<group>";
+		};
+		54965E1B1B3ED63E0041A18F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54965E2E1B3EE3FA0041A18F /* Homee WatchKit Extension.entitlements */,
+				54965E1C1B3ED63E0041A18F /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5496C6D21AD118D600BAE7EB /* Switch */ = {
@@ -129,6 +222,8 @@
 			children = (
 				54E49D4E1AD0CBCA0013A50D /* Homee */,
 				54E49D671AD0CBCA0013A50D /* HomeeTests */,
+				54965E0A1B3ED63E0041A18F /* Homee WatchKit Extension */,
+				54965E1A1B3ED63E0041A18F /* Homee WatchKit App */,
 				54E49D4D1AD0CBCA0013A50D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,6 +233,8 @@
 			children = (
 				54E49D4C1AD0CBCA0013A50D /* Homee.app */,
 				54E49D641AD0CBCA0013A50D /* HomeeTests.xctest */,
+				54965E091B3ED63E0041A18F /* Homee WatchKit Extension.appex */,
+				54965E161B3ED63E0041A18F /* Homee WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +256,7 @@
 		54E49D4F1AD0CBCA0013A50D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				54965E2D1B3EE34D0041A18F /* Homee.entitlements */,
 				54F693351AD198A0003C6585 /* Homee-Bridging-Header.h */,
 				542BACF01B32E4290037B384 /* Images.xcassets */,
 				54E49D5D1AD0CBCA0013A50D /* LaunchScreen.xib */,
@@ -188,6 +286,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		54965E081B3ED63E0041A18F /* Homee WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54965E2A1B3ED63E0041A18F /* Build configuration list for PBXNativeTarget "Homee WatchKit Extension" */;
+			buildPhases = (
+				54965E051B3ED63E0041A18F /* Sources */,
+				54965E061B3ED63E0041A18F /* Frameworks */,
+				54965E071B3ED63E0041A18F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54965E191B3ED63E0041A18F /* PBXTargetDependency */,
+			);
+			name = "Homee WatchKit Extension";
+			productName = "Homee WatchKit Extension";
+			productReference = 54965E091B3ED63E0041A18F /* Homee WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		54965E151B3ED63E0041A18F /* Homee WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54965E291B3ED63E0041A18F /* Build configuration list for PBXNativeTarget "Homee WatchKit App" */;
+			buildPhases = (
+				54965E141B3ED63E0041A18F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Homee WatchKit App";
+			productName = "Homee WatchKit App";
+			productReference = 54965E161B3ED63E0041A18F /* Homee WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 		54E49D4B1AD0CBCA0013A50D /* Homee */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54E49D6E1AD0CBCA0013A50D /* Build configuration list for PBXNativeTarget "Homee" */;
@@ -195,10 +326,12 @@
 				54E49D481AD0CBCA0013A50D /* Sources */,
 				54E49D491AD0CBCA0013A50D /* Frameworks */,
 				54E49D4A1AD0CBCA0013A50D /* Resources */,
+				54965E2B1B3ED63E0041A18F /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				54965E231B3ED63E0041A18F /* PBXTargetDependency */,
 			);
 			name = Homee;
 			productName = Homee;
@@ -233,9 +366,26 @@
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = "Realank-Mac";
 				TargetAttributes = {
+					54965E081B3ED63E0041A18F = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 275X96KVEB;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					54965E151B3ED63E0041A18F = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
 					54E49D4B1AD0CBCA0013A50D = {
 						CreatedOnToolsVersion = 6.2;
 						DevelopmentTeam = 275X96KVEB;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					54E49D631AD0CBCA0013A50D = {
 						CreatedOnToolsVersion = 6.2;
@@ -258,11 +408,31 @@
 			targets = (
 				54E49D4B1AD0CBCA0013A50D /* Homee */,
 				54E49D631AD0CBCA0013A50D /* HomeeTests */,
+				54965E081B3ED63E0041A18F /* Homee WatchKit Extension */,
+				54965E151B3ED63E0041A18F /* Homee WatchKit App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		54965E071B3ED63E0041A18F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54965E131B3ED63E0041A18F /* Images.xcassets in Resources */,
+				54965E171B3ED63E0041A18F /* Homee WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54965E141B3ED63E0041A18F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54965E1F1B3ED63E0041A18F /* Interface.storyboard in Resources */,
+				54965E211B3ED63E0041A18F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54E49D4A1AD0CBCA0013A50D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,6 +453,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		54965E051B3ED63E0041A18F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54965E111B3ED63E0041A18F /* NotificationController.swift in Sources */,
+				54965E0F1B3ED63E0041A18F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54E49D481AD0CBCA0013A50D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,6 +497,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		54965E191B3ED63E0041A18F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54965E151B3ED63E0041A18F /* Homee WatchKit App */;
+			targetProxy = 54965E181B3ED63E0041A18F /* PBXContainerItemProxy */;
+		};
+		54965E231B3ED63E0041A18F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54965E081B3ED63E0041A18F /* Homee WatchKit Extension */;
+			targetProxy = 54965E221B3ED63E0041A18F /* PBXContainerItemProxy */;
+		};
 		54E49D661AD0CBCA0013A50D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 54E49D4B1AD0CBCA0013A50D /* Homee */;
@@ -326,6 +515,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		54965E1D1B3ED63E0041A18F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54965E1E1B3ED63E0041A18F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		54E49D581AD0CBCA0013A50D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -345,6 +542,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		54965E251B3ED63E0041A18F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Homee WatchKit Extension/Homee WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Homee WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		54965E261B3ED63E0041A18F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Homee WatchKit Extension/Homee WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Homee WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		54965E271B3ED63E0041A18F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Homee_WatchKit_Extension;
+				INFOPLIST_FILE = "Homee WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		54965E281B3ED63E0041A18F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				IBSC_MODULE = Homee_WatchKit_Extension;
+				INFOPLIST_FILE = "Homee WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 		54E49D6C1AD0CBCA0013A50D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -430,11 +701,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Homee/Homee.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Homee/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Homee/Homee-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -447,11 +721,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Homee/Homee.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Homee/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Homee/Homee-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -494,6 +771,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		54965E291B3ED63E0041A18F /* Build configuration list for PBXNativeTarget "Homee WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54965E271B3ED63E0041A18F /* Debug */,
+				54965E281B3ED63E0041A18F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54965E2A1B3ED63E0041A18F /* Build configuration list for PBXNativeTarget "Homee WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54965E251B3ED63E0041A18F /* Debug */,
+				54965E261B3ED63E0041A18F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		54E49D471AD0CBC90013A50D /* Build configuration list for PBXProject "Homee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
