@@ -14,7 +14,7 @@ protocol receiveSocketMsgDelegate{
 
 struct IPAndPort {
     static var hostIP = "182.92.183.168"
-    static var port = 3001
+    static var port = 6001
 }
 
 class SocketComm: NSObject {

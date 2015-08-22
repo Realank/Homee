@@ -20,6 +20,7 @@ class SwitchTableViewController: UITableViewController, SwitchChangedDelegate, S
         super.viewDidLoad()
         tableView.estimatedRowHeight = tableView.rowHeight
         tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         
         switchData.switchDataHasUpdateDelegater = self
         navigationBarDefaultName = navigationBar.title
